@@ -1,11 +1,38 @@
 #!/usr/bin/python3
 
-#利用価値有!!!!!!!
+#SI接頭辞変換ツール
+
+#標準入力 echo"数値 m k"
+#標準出力 変換|数値 単位
+#Q,R,Y,Z,E,P,T,G,M,k,h,da, ,d,c,m,μ,n,p,f,a,z,y,r,q計24個
+
+import sys
 
 
-#単位変換ツール
-#SI単位とかを10乗倍する
-#標準入力 echooo"数値 m k"
-#標準出力 変換された数値単位k
-print("肺炎辛すぎる")
-print("echoooooooooooooooooooooooooooooooo")
+si  = ["Q","R","Y","Z","E","P","T","G","M","k","h","da","d","c","m","μ","n","p","f","a","z","y","r","q"]
+sin = [30,27,24,21,18,15,12,9,6,3,2,1,0,-1,-2,-3,-6,-9,-12,-15,-18,-21,-24,-27,-30]
+roop = 0
+
+kyu = 0
+new = 0
+gap = 0
+
+read = sys.stdin.read().strip()
+data = read.split()
+
+
+print("[value]",data[0],"[input unit]",data[1],"[output unit]",data[2])
+
+for sis in si:
+    if data[1] == sis:
+       kyu = sin[roop]
+
+    if data[2] == sis:
+       new = sin[roop]
+
+    roop +=1
+
+gap = kyu - new
+end = float(data[0]) * (10 ** gap)
+
+print(end,data[2])
