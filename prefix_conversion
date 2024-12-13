@@ -1,4 +1,7 @@
-#!/usr/bin/python3
+#!/bin/bash
+# SPDX-FileCopyrightText: 2024 Riku Kinjo
+# SPDX-License-Identifier: BSD-3-Clause
+
 
 #SI接頭辞変換ツール
 
