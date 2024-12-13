@@ -9,7 +9,7 @@
 import sys
 
 
-si  = ["Q","R","Y","Z","E","P","T","G","M","k","h","da","d","c","m","μ","n","p","f","a","z","y","r","q"]
+si  = ["Q","R","Y","Z","E","P","T","G","M","k","h","da"," ","d","c","m","μ","n","p","f","a","z","y","r","q"]
 sin = [30,27,24,21,18,15,12,9,6,3,2,1,0,-1,-2,-3,-6,-9,-12,-15,-18,-21,-24,-27,-30]
 roop = 0
 
@@ -24,10 +24,12 @@ for sis in si:
     if data[1] == sis:
        kyu = sin[roop]
 
+
     if data[2] == sis:
        new = sin[roop]
 
-    roop +=1
+
+    roop += 1
 
 gap = kyu - new
 end = float(data[0]) * (10 ** gap)
