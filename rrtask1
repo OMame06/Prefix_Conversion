@@ -2,7 +2,7 @@
 
 #SI接頭辞変換ツール
 
-#標準入力 echo"数値 m k"
+#標準入力 echo"数値 旧単 新単"
 #標準出力 変換|数値 単位
 #Q,R,Y,Z,E,P,T,G,M,k,h,da, ,d,c,m,μ,n,p,f,a,z,y,r,q計24個
 
@@ -19,9 +19,6 @@ gap = 0
 
 read = sys.stdin.read().strip()
 data = read.split()
-
-
-print("[value]",data[0],"[input unit]",data[1],"[output unit]",data[2])
 
 for sis in si:
     if data[1] == sis:
