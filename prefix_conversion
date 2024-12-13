@@ -7,7 +7,7 @@
 
 #標準入力 echo"数値 旧単 新単"
 #標準出力 変換|数値 単位
-#Q,R,Y,Z,E,P,T,G,M,k,h,da, ,d,c,m,μ,n,p,f,a,z,y,r,q計24個
+#Q,R,Y,Z,E,P,T,G,M,k,h,da, ,d,c,m,μ,n,p,f,a,z,y,r,q計25個
 
 import sys
 
